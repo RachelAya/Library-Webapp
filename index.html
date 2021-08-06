@@ -13,6 +13,25 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+            This survey for is to collect information on SIHS students in the WhoAmI Program.
+        </p>
+        <!-- TODO Update the action and method when I create my database -->
+        <form action="#" id="survey-form">
+            <label for="email" id="name-label">Full name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <br>
+            <!-- an email that is not formatted correctly, I will see an HTML5 validation error. -->
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <br>
+            <label for="grade" id="number-label">Your Grade (between 10 and 12):</label>
+            <input type="number" id="number" name="grade" min="10" max="12" placeholder="Enter the grade you are in currently">
+            <br>
+            <label for="textarea">Any additional comments:</label>
+            <br>
+            <textarea name="add-com" id="#comments" cols="30" rows="10"></textarea>
+        </form>
     </body>
 </html>
