@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root{
     --accent: #C09BD8;
@@ -11,6 +11,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
@@ -20,13 +22,57 @@ html, body{
 
 body{
     background: var(--accent);
+    padding: 0 10px;
 }
 
-p, label, a{
-    font-family: "Open Sans", sans-serif;
-    /* color: var(--dark); */
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px, 1px, 2px rgba(0,0,0,0.125);
 }
 
-button{
-    cursor: pointer;
+.wrapper #title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--accent);
+    text-transform: uppercase;
+    text-align: center;
 }
+
+.wrapper form{
+    width: 100%;
+}
+
+.wrapper form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper form .input_field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper form .input_field input,
+.wrapper form .input_field textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+.wrapper form .input_field textarea {
+    resize: none;
+    height: 125px;
+}
+
