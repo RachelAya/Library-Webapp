@@ -58,12 +58,12 @@ body{
     margin-bottom: 15px;
     display: flex;
     align-items: center;
-}
+} 
 
 .wrapper form .input_field label{
     width: 200px;
     color: #757575;
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 14px;
 }
 
@@ -112,7 +112,18 @@ wrapper form .input_field textarea:focus{
     background: var(--accentHover);
 }
 
+.wrapper form #dropdown{
+    color: #757575;
+    background-color: white;
+    width: 90%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: var(--transition);
 
+}
 /* --- Media Querries */
 
 @media (max-width: 420px) {
