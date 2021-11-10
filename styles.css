@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root{
-    --accent: #C09BD8;
-    --accentHover: #9F84BD;
+    --accent: #6f1a07;
+    --accentHover: #99240A;
     --dark: #0000;
     --light: #EDE3E9;
     --transition: all 0.3s ease 0s;
@@ -21,7 +21,8 @@ html, body{
 }
 
 body{
-    background: var(--accent);
+    /* background: var(--accent); */
+    background-image: url("images/background2.jpeg");
     padding: 0 10px;
 }
 
@@ -37,7 +38,16 @@ body{
 .wrapper #title{
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: var(--accent);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper #title-login{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px;
     color: var(--accent);
     text-transform: uppercase;
     text-align: center;
