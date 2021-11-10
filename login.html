@@ -7,33 +7,37 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Log In</title>
-    <meta name="description" content="Log in page for library webapp" />
+    <title>Survey Form</title>
+    <meta name="description" content="Survey Form for my design basics" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="wrapper">
-      <h1 id="title-login">Log In</h1>
+      <h1 id="title">Book Registration Form</h1>
+      <p id="description">
+        Enter book information about any new book added to the library.
+      </p>
       <!-- TODO Update the action and method when I create my database -->
-      <form action="#" id="survey-form">
+      <form action="#" id="registration-form">
+        <div class="input_field">
+          <label for="booktitle" id="title-label">Book Title:</label>
+          <input type="text" id="book" required/>
+        </div>
         <!-- an email that is not formatted correctly, I will see an HTML5 validation error. -->
         <div class="input_field">
-          <label for="email" id="email-label">Email:</label>
-          <input type="email" id="email" required placeholder="Enter your email" />
+          <label for="author" id="author-label">Author's Name:</label>
+          <input type="text" id="author" required/>
         </div>
-        <!-- Password field -->
         <div class="input_field">
-          <label for="password" id="password-label">Password:</label>
-          <input type="password" id="password" required placeholder="Password" />
-        </div>        
-        <!-- successful submission leads to Registration page -->
+          <label for="shelf" id="shelf-label">Shelf Number:</label>
+          <input type="text" id="shelf" required/>
+        </div>
         <div class="inputfield">
-            <input type="submit" value="Submit" class="btn" id="submit" onclick="document.location='index.html'">
+            <input type="submit" value="Submit" class="btn" id="submit">
         </div>
       </form>
     </div>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   </body>
 </html>
  
