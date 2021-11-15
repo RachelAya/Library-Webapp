@@ -24,17 +24,17 @@
         
         <!-- an email that is not formatted correctly, I will see an HTML5 validation error. -->
         <div class="input_field">
-          <label for="email" id="email-label">Email:</label>
-          <input type="email" id="email" required placeholder="Enter your email" />
+          <label for="email" id="email-label">Username:</label>
+          <input type="email" name=username id="email" required placeholder="Enter your username" />
         </div>
         <!-- Password field -->
         <div class="input_field">
           <label for="password" id="password-label">Password:</label>
-          <input type="password" id="password" required placeholder="Password" />
+          <input type="password" name="password" id="password" required placeholder="Password" />
         </div>        
         <!-- successful submission leads to Registration page -->
         <div class="inputfield">
-            <input type="submit" value="Submit" class="btn" id="submit" onclick="document.location='index.html'">
+            <input type="submit" value="Submit" class="btn" id="submit" onclick="document.location='registration.php'">
         </div>
       </form>
     </div>
