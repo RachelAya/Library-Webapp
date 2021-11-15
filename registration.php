@@ -14,6 +14,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- TODO: Look at sign up code in LoginSys -->
       <h1 id="title">Book Registration Form</h1>
       <p id="description">
         Enter book information about any new book added to the library.

@@ -1,7 +1,6 @@
 <?php
 
 // Database credentials
-// TODO: Check root password
 
 define('DB_SERVER', 'localhost:3036');
 define('DB_USERNAME', 'root');
